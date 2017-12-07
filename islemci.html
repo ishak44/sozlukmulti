@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Örnek Mobil Uygulama</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+<div data-role="page">
+<div data-role="header" data-position="fixed">
+<h1 style="background-color:burlywood">bilgisayar terimleri sözlüğü</h1>    
+</div>    
+<div role="main" class="ui-content">
+   <div data-position="fixed"> <form>
+    <input id="filter-for-listview" data-type="search" placeholder="şunu ara...">
+</form></div>
+<ul data-role="listview" data-inset="true" data-filter="true" data-input="#filter-for-listview">
+    <li><a href="anakart.html" data-rel="dialog" data-transition="slidefade">anakart</a></li>
+    <li><a href="islemci.html" data-rel="dialog" data-transition="slidefade">işlemci</a></li>
+    <li><a href="bellek.html" data-rel="dialog" data-transition="slidefade">Ram Bellek</a></li>
+    <li><a href="depo.html" data-rel="dialog" data-transition="slidefade">Depolama Birimi</a></li>
+    <li><a href="kasa.html" data-rel="dialog" data-transition="slidefade">Kasa</a></li>
+</ul>
+    
+    </div>
+    <div data-role="footer" data-position="fixed">
+    <h4 style="background-color:burlywood">resim1</h4>
+    </div>
+    </div>
+</body>
+    
+</html>
